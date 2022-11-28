@@ -8,7 +8,7 @@ matplotlib
 pandas
 gdown
 wandb
-Unicode
+Unidecode
 inflect
 hparams
 pyworld
