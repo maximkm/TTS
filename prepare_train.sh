@@ -20,5 +20,7 @@ mv alignments src/data/
 #download pitch and energy
 gdown "1gjYCC2A7hmBsQtghHcymSLUg09qf4ab4&confirm=t"
 gdown "1oRdvTuRKdRsYJt617Nloyq8qbbpHdbsc&confirm=t"
+unzip pitchs.zip
+unzip energy.zip
 mv pitchs src/data/
 mv energy src/data/
