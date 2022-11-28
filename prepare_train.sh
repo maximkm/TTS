@@ -2,13 +2,13 @@
 wget https://data.keithito.com/data/speech/LJSpeech-1.1.tar.bz2 -o /dev/null
 mkdir data
 tar -xvf LJSpeech-1.1.tar.bz2 >> /dev/null
-mv LJSpeech-1.1 data/LJSpeech-1.1
+mv LJSpeech-1.1 src/data/LJSpeech-1.1
 
-gdown https://drive.google.com/u/0/uc?id=1-EdH0t0loc6vPiuVtXdhsDtzygWNSNZx
-mv train.txt data/
+gdown "1-EdH0t0loc6vPiuVtXdhsDtzygWNSNZx&confirm=t"
+mv train.txt src/data/
 
 #download mels
-gdown https://drive.google.com/u/0/uc?id=1cJKJTmYd905a-9GFoo5gKjzhKjUVj83j
+gdown "1cJKJTmYd905a-9GFoo5gKjzhKjUVj83j&confirm=t"
 tar -xvf mel.tar.gz
 mv mels src/data/
 
@@ -18,7 +18,7 @@ unzip alignments.zip >> /dev/null
 mv alignments src/data/
 
 #download pitch and energy
-gdown https://drive.google.com/file/d/1gjYCC2A7hmBsQtghHcymSLUg09qf4ab4
-gdown https://drive.google.com/file/d/1oRdvTuRKdRsYJt617Nloyq8qbbpHdbsc
+gdown "1gjYCC2A7hmBsQtghHcymSLUg09qf4ab4&confirm=t"
+gdown "1oRdvTuRKdRsYJt617Nloyq8qbbpHdbsc&confirm=t"
 mv pitchs src/data/
 mv energy src/data/
